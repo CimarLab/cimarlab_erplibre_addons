@@ -5,12 +5,12 @@
     <template id="s_cimar_snippet" name="Cimar Snippet">
         <section class="o_cimar_snippet">
             <div class="container">
-                <div class="text-center cimar_snippet_value">helloworld</div>
+                <div class="text-center cimar_snippet_value">Hello</div>
             </div>
         </section>
     </template>
     <!-- Add snippets to menu -->
-    <template id="snippets" inherit_id="website.snippets">
+    <template id="snippet_effect" inherit_id="website.snippets">
         <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
             <t t-snippet="cimar_snippet.s_cimar_snippet" t-thumbnail="/cimar_snippet/static/description/icon.png" />
         </xpath>
