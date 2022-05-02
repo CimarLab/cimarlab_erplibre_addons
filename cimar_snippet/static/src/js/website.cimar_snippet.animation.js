@@ -21,7 +21,7 @@ odoo.define("cimar_snippet.animation", function (require) {
                     }
 
                     self._$loadedContent = $(data);
-                    self._eventList.text(data["hello"]);
+                    //self._eventList.text(data["hello"]);
                 }
             );
 

@@ -2,9 +2,9 @@ from odoo import http
 from odoo.http import request
 
 
-class LinkupSnippetController(http.Controller):
+class RegisterSnippetController(http.Controller):
     @http.route(
-        ["/linkup_snippet/helloworld"],
+        ["/register_snippet/helloworld"],
         type="json",
         auth="public",
         website=True,

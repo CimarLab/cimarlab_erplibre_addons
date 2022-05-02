@@ -1,5 +1,5 @@
 {
-    "name": "Linkup Snippet",
+    "name": "Register Snippet",
     "category": "Website",
     "version": "12.0.1.0",
     "author": "TechnoLibre",
