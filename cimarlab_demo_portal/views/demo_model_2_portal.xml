@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="demo_model_2_portal_view_form" model="ir.ui.view">
+        <field name="name">demo_model_2_portal_form</field>
+        <field name="model">demo.model_2.portal</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                    <group>
+                        <field name="demo_many2one_dst" />
+                    </group>
+                    <group>
+                        <field name="demo_many2one_src" />
+                    </group>
+                    <group>
+                        <field name="diagram_id" />
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" options="{'post_refresh': 'recipients'}" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="demo_model_2_portal_view_graph" model="ir.ui.view">
+        <field name="name">demo_model_2_portal_graph</field>
+        <field name="model">demo.model_2.portal</field>
+        <field name="arch" type="xml">
+            <graph string="Demo model 2 portal">
+                <field name="name" type="row" />
+                <field name="demo_many2one_dst" type="row" />
+                <field name="demo_many2one_src" type="row" />
+                <field name="diagram_id" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="demo_model_2_portal_view_kanban" model="ir.ui.view">
+        <field name="name">demo_model_2_portal_kanban</field>
+        <field name="model">demo.model_2.portal</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name" />
+                <field name="demo_many2one_dst" />
+                <field name="demo_many2one_src" />
+                <field name="diagram_id" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="demo_many2one_dst" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="demo_many2one_src" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="diagram_id" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="demo_model_2_portal_view_pivot" model="ir.ui.view">
+        <field name="name">demo_model_2_portal_pivot</field>
+        <field name="model">demo.model_2.portal</field>
+        <field name="arch" type="xml">
+            <pivot string="Demo model 2 portal">
+                <field name="name" type="row" />
+                <field name="demo_many2one_dst" type="row" />
+                <field name="demo_many2one_src" type="row" />
+                <field name="diagram_id" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="demo_model_2_portal_view_search" model="ir.ui.view">
+        <field name="name">demo_model_2_portal_search</field>
+        <field name="model">demo.model_2.portal</field>
+        <field name="arch" type="xml">
+            <search string="Demo model 2 portal">
+                <filter domain="[('name','!=',False)]" name="name" string="Name" />
+                <filter domain="[('demo_many2one_dst','!=',False)]" name="demo_many2one_dst" string="Many2one dst" />
+                <filter domain="[('demo_many2one_src','!=',False)]" name="demo_many2one_src" string="Many2one src" />
+                <filter domain="[('diagram_id','!=',False)]" name="diagram_id" string="Diagram" />
+            </search>
+        </field>
+    </record>
+
+    <record id="demo_model_2_portal_view_tree" model="ir.ui.view">
+        <field name="name">demo_model_2_portal_tree</field>
+        <field name="model">demo.model_2.portal</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="demo_many2one_dst" />
+                <field name="demo_many2one_src" />
+                <field name="diagram_id" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="demo_model_2_portal_demo_model_2_portal_action_window"
+        name="Demo model 2 portal"
+        res_model="demo.model_2.portal"
+        view_mode="kanban,tree,pivot,graph,form,activity"
+    />
+</odoo>

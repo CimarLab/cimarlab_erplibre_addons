@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Snippets -->
+    <template id="s_cimar_snippet" name="Cimar Snippet">
+        <section class="o_cimar_snippet" style="padding-top: 80px;" id="sousou">
+
+
+      <div class="container mt-1 mb-1 m-auto shadow-lg " style="background-color: #fff; border-radius: 20px; ">
+        <br/>
+
+
+          <div class="row  " >
+            <div class="col-lg-6" style="padding-bottom: 19px;" >
+              <img  src="/../../../cimar_snippet/static/description/login.png" style="width: 100%; border-radius: 20px;height: 600px;"/>
+
+            </div>
+
+            <div class="col-lg-6 " style="padding-top:10px" >
+              <p style="text-align: right;padding-right: 50px;">Not a member !<a href=""> Register Now</a></p>
+
+              <h2 class="col-lg-6  m-auto" style="font-weight: bold ;font-size: 2em;align-items: center; text-align: center;padding-top:80px">Hello Again!</h2>
+              <br/>
+              <h4 style="align-items: center; text-align: center;">Welcome back you've been missed!</h4>
+              <br/>
+              <form  class="col-md-12  m-auto" style=" align-items: center; text-align: center">
+                <div class="form-group"  style="padding-left: 100px;">
+
+                  <input name="userName"  placeholder="Enter username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 75%;"/>
+                </div><br/>
+                <div class="form-group" style="padding-left: 100px;">
+
+                  <input placeholder="Password" id="userPassword" type="password" class="form-control" style="width: 75%;" />
+                </div>
+                <p style="text-align: right;padding-right: 104px;">Forgot Password ?</p><br/>
+                <button type="submit" class="bv col-lg-12" style="width: 60%;">Log In</button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+</section>
+
+
+    </template>
+    <!-- Add snippets to menu -->
+    <template id="snippet_effect" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="cimar_snippet.s_cimar_snippet" t-thumbnail="/cimar_snippet/static/description/icon.png" />
+        </xpath>
+    </template>
+    <!-- Add stylesheet and Javascript -->
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/cimar_snippet/static/src/scss/cimar_snippet.scss" />
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/cimar_snippet/static/src/js/website.cimar_snippet.animation.js" />
+        </xpath>
+    </template>
+</odoo>

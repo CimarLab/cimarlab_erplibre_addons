@@ -1,0 +1,34 @@
+#sousou
+{
+    background-color: #eff6ff;
+    padding: 140px 100px;
+}
+.login
+{
+    background-color: #ffffff;
+    padding: 20px 30px;
+}
+a{
+color: rgb(44, 75, 255);
+}
+
+@media screen and (max-width:600px)
+{
+
+    .o_cimar_snippet
+{
+    padding: 140px 30px;
+}
+}
+.bv{
+    background-color:
+    rgb(44, 75, 255);/*#9999CC*/
+      outline: none;
+      border: none;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+  }
