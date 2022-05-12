@@ -17,11 +17,11 @@
             </div>
 
             <div class="col-lg-6 " style="padding-top:10px" >
-              <p style="text-align: right;padding-right: 50px;">Not a member !<a href=""> Register Now</a></p>
+              <p style="text-align: right;padding-right: 50px; color: #000">Not a member !<a href=""> Register Now</a></p>
 
-              <h2 class="col-lg-6  m-auto" style="font-weight: bold ;font-size: 2em;align-items: center; text-align: center;padding-top:80px">Hello Again!</h2>
+              <h2 class="col-lg-6  m-auto" style="font-weight: bold ;font-size: 2em;align-items: center; text-align: center;padding-top:80px; color: #000">Hello Again!</h2>
               <br/>
-              <h4 style="align-items: center; text-align: center;">Welcome back you've been missed!</h4>
+              <h4 style="align-items: center; text-align: center; color: #000">Welcome back you've been missed!</h4>
               <br/>
               <form  class="col-md-12  m-auto" style=" align-items: center; text-align: center">
                 <div class="form-group"  style="padding-left: 100px;">
@@ -32,7 +32,7 @@
 
                   <input placeholder="Password" id="userPassword" type="password" class="form-control" style="width: 75%;" />
                 </div>
-                <p style="text-align: right;padding-right: 104px;">Forgot Password ?</p><br/>
+                <p style="text-align: right;padding-right: 104px; color: #000">Forgot Password ?</p><br/>
                 <button type="submit" class="bv col-lg-12" style="width: 60%;">Log In</button>
               </form>
             </div>

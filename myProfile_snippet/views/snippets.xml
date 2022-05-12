@@ -4,9 +4,77 @@
     <!-- Snippets -->
     <template id="s_myProfile_snippet" name="Myprofile Snippet">
         <section class="o_myProfile_snippet">
-            <div class="container">
-                <div class="text-center myProfile_snippet_value">Hello</div>
-            </div>
+             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+<div class="container bootstrap snippets bootdey">
+<div class="row">
+  <div class="profile-nav col-md-3">
+      <div class="panel">
+          <div class="user-heading round">
+              <a href="#">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""/>
+              </a>
+              <h1>Lily Smith</h1>
+              <p>Lily.smith@gmail.com</p>
+          </div>
+<ul class="navbar__menu">
+    <div>
+    <li class="navbar__item">
+        <a href="#" class="active" id="home-page"> <i class="fa fa-user"></i> Profile</a>
+    </li></div>
+          <div><li class="navbar__item">
+            <a href="#about" class="active" id="about-page"><i class="fa fa-calendar"></i> Recent Activity</a>
+          </li></div>
+         <div><li class="navbar__item">
+            <a href="#services" class="active" id="services-page"><i class="fa fa-edit"></i> Edit profile</a>
+          </li></div>
+    <div><li class="navbar__item">
+            <a href="#services" class="active" id="services-page"><i class="fa fa-user"></i> Connections</a>
+          </li></div>
+    <div><li class="navbar__item">
+            <a href="#services" class="active" id="services-page"><i class="fa fa-caret-square-o-right"></i> Select thematic</a>
+          </li></div>
+    <div><li class="navbar__item">
+            <a href="#services" class="active" id="services-page"><i class="fa fa-wrench"></i> Help</a>
+          </li></div>
+        </ul>
+      </div>
+  </div>
+  <div class="profile-info col-md-9">
+      <div class="panel">
+          <div class="panel-body bio-graph-info">
+              <h1>About</h1>
+              <div class="row">
+                  <div class="bio-row">
+                      <p><span>First Name </span>: Lily</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Last Name </span>: Smith</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Country </span>: Australia</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Birthday</span>: 13 July 1993</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Occupation </span>: UI Designer</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Email </span>: lily.smith@flatlab.com</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Mobile </span>: (Phone code) 03 4567890</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>Interests</span>: Yoga, voluntary work and parties !</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
         </section>
     </template>
     <!-- Add snippets to menu -->
