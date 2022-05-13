@@ -11,10 +11,6 @@
 
 
           <div class="row  " >
-            <div class="col-lg-6" style="padding-bottom: 19px;" >
-              <img  src="/../../../cimar_snippet/static/description/login.png" style="width: 100%; border-radius: 20px;height: 600px;"/>
-
-            </div>
 
             <div class="col-lg-6 " style="padding-top:10px" >
               <p style="text-align: right;padding-right: 50px; color: #000">Not a member !<a href=""> Register Now</a></p>
