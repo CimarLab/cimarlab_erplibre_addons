@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+linkup_membre_access_user_types_/_internal_user,linkup_membre Access User types / Internal User,model_linkup_membre,base.group_user,1,1,1,1
+linkup_review_access_user_types_/_internal_user,linkup_review Access User types / Internal User,model_linkup_review,base.group_user,1,1,1,1
